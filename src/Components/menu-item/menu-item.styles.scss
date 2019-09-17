@@ -10,6 +10,10 @@
   background-position: center;
   background-size: cover;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &.large {
     height: 380px;
   }
@@ -35,7 +39,6 @@
     transition: 0.2s;
     &:hover {
       opacity: 0.9;
-      cursor: pointer;
     }
 
     .title {
