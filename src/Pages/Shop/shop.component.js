@@ -252,8 +252,8 @@ const collections = [
 const ShopPage = () => (
   <div>
     {
-      collections.map(item => (
-        <PreviewCollection title={item.title} items={item.items}/>
+      collections.filter((item, index) => index < 4).map(({id, ...otherProps}) => (
+        <PreviewCollection key={id} {...otherProps}/>
       ))
     }
   </div>
