@@ -2,6 +2,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 import './SignIn.styles.scss';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 const SignIn = () => {
   const initialState = {
@@ -12,7 +13,7 @@ const SignIn = () => {
   const [form, updateForm] = React.useState(initialState);
 
   const _handleChange = (e) => {
-    updateForm({...form, [e.target.name]: e.target.value})
+    updateForm({ ...form, [e.target.name]: e.target.value })
   }
 
   const _handleSubmit = (e) => {
@@ -29,6 +30,7 @@ const SignIn = () => {
         <FormInput name="email" _handleChange={_handleChange} label="Email" value={form.email} required />
         <FormInput name="password" type="password" _handleChange={_handleChange} label="Password" value={form.password} required />
         <CustomButton type="submit" value="Submit Form">Log In</CustomButton>
+        <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Log In With Google</CustomButton>
       </form>
     </div>
   )
