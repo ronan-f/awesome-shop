@@ -29,8 +29,10 @@ const SignIn = () => {
       <form onSubmit={_handleSubmit}>
         <FormInput name="email" _handleChange={_handleChange} label="Email" value={form.email} required />
         <FormInput name="password" type="password" _handleChange={_handleChange} label="Password" value={form.password} required />
-        <CustomButton type="submit" value="Submit Form">Log In</CustomButton>
-        <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Log In With Google</CustomButton>
+        <div className="buttons">
+          <CustomButton type="submit" value="Submit Form">Log In</CustomButton>
+          <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Log In With Google</CustomButton>
+        </div>
       </form>
     </div>
   )
