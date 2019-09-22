@@ -18,12 +18,16 @@ const SignUp = () => {
     })
   }
 
+  const { name, email, password } = state;
+
   return (
     <div>
-      <FormInput name="name" label="Name" _handleChange={_handleChange} value={state.name} requried />
-      <FormInput name="email" label="Email" _handleChange={_handleChange} value={state.email} required />
-      <FormInput name="password" label="password" _handleChange={_handleChange} value={state.password} required />
-      <CustomButton>Sign Up</CustomButton>
+      <h2>I don't have an account</h2>
+      <span>Sign up with your email/password</span>
+      <FormInput name="name" label="Name" _handleChange={_handleChange} value={name} requried />
+      <FormInput name="email" label="Email" _handleChange={_handleChange} value={email} required />
+      <FormInput name="password" label="password" _handleChange={_handleChange} value={password} required />
+      <CustomButton type="submit">Sign Up</CustomButton>
     </div>
   );
 }
