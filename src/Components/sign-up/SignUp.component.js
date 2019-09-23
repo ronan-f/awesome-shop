@@ -22,9 +22,10 @@ const SignUp = () => {
 
   const _handleSubmit = async (e) => {
     try {
-
+      e.preventDefault();
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
-      await createUserProfileDocument(user, displayName)
+      await createUserProfileDocument(user, { displayName })
+      console.log("The user 2", user);
       setState(initialState);
 
     } catch(e) {
