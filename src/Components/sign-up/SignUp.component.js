@@ -39,9 +39,9 @@ const SignUp = () => {
       <h2>I don't have an account</h2>
       <span>Sign up with your email/password</span>
       <form onSubmit={_handleSubmit}>
-        <FormInput name="name" label="Name" _handleChange={_handleChange} value={displayName} requried />
+        <FormInput name="displayName" label="Display Name" _handleChange={_handleChange} value={displayName} required />
         <FormInput name="email" label="Email" _handleChange={_handleChange} value={email} required />
-        <FormInput name="password" label="Password" _handleChange={_handleChange} value={password} required />
+        <FormInput name="password" type="password" label="Password" _handleChange={_handleChange} value={password} required />
         <CustomButton type="submit">Sign Up</CustomButton>
       </form>
     </div>
