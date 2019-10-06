@@ -1,6 +1,8 @@
-# Awesome Shop
+## Awesome Shop
 
-This is a personal project I've used to learn more about react and serverless development. I used react/redux/firebase to build the app and it's deployed on heroku [here](https://awesome-shop-react.herokuapp.com)
+This is a personal project I've used to learn more about react and serverless development. I used react (with hooks and styled components), redux and firebase to build the app.
+
+It's deployed on heroku [here](https://awesome-shop-react.herokuapp.com)
 
 ## Screenshots
 
