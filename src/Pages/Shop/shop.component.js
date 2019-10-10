@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import CollectionsOverview from '../../Components/collections-overview/collections-overview.component';
 import CollectionPage from '../Collection/Collection.component';
@@ -16,7 +16,7 @@ const ShopPage = ({ match, updateCollections }) => {
 
   useEffect(() => {
     const collectionRef = firestore.collection('collections');
-    collectionRef.onSnapshot(async snapshot => {
+    collectionRef.onSnapshot(snapshot => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionsMap);
       setLoading(false);
