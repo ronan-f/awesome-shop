@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 import CollectionsOverviewContainer from '../../Components/collections-overview/collections-overview.container';
 import CollectionPageContainer from '../Collection/Collection.container';
 
-const ShopPage = ({ match, isCollectionLoaded, fetchCollectionsStartAsync }) => {
+const ShopPage = ({ match, fetchCollectionsStartAsync }) => {
 
-  useEffect(() => fetchCollectionsStartAsync());
+  useEffect(() => fetchCollectionsStartAsync(), [fetchCollectionsStartAsync]);
 
   return (
     <div>
