@@ -1,6 +1,15 @@
 .sign-up {
   width: 420px;
 
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+
   .title {
     margin: 10px 0;
   }

@@ -39,4 +39,16 @@
     padding-left: 12px;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    justify-content: space-between;
+
+    .name {
+      display: none;
+    };
+
+    .image-container {
+      padding: none;
+    }
+  }
 }

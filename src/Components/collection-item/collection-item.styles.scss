@@ -20,15 +20,21 @@
     position: absolute;
     top: 255px;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+    }
   }
 
   &:hover {
     .image {
-      opacity: 0,8;
+      opacity: 0.8;
     }
 
     .custom-button {
-      opacity: 0,85;
+      opacity: 0.85;
       display: flex;
     }
   }
@@ -48,5 +54,20 @@
 
     .price {
       width: 12%;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 80vw;
+      margin: 10px;
+
+      &:hover {
+        .image {
+          opacity: unset;
+        }
+    
+        .custom-button {
+          opacity: unset;
+        }
+      }
     }
 }

@@ -6,6 +6,17 @@
   align-items: center;
   margin: 50px auto 0;
 
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin: 25px auto 0;
+  }
+
+  .description {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
   .checkout-header {
     width: 100%;
     padding: 10px 0;
@@ -21,17 +32,29 @@
         width: 8%;
       }
     }
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   .total {
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+
+    @media screen and (max-width: 800px) {
+      margin: 30px 0;
+    }
   }
 
   .alert-text {
     color: red;
     margin: 50px 0;
     font-size: 20px;
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
   }
 }
