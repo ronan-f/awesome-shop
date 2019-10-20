@@ -2,7 +2,7 @@
 
 This is a personal project I've used to learn more about react and serverless development. I used react (with hooks and styled components), redux and firebase to build the app.
 
-It's deployed on heroku [here](https://awesome-shop-react.herokuapp.com)
+It's deployed on heroku [here](https://awesome-shop-react.herokuapp.com) and can be downloaded as a Progressive Web App.
 
 ## Screenshots
 
@@ -21,3 +21,7 @@ Checkout
 Stripe Payments
 
 ![Stripe Payments](https://i.imgur.com/ylzvjbn.png)
+
+Progressive Web App
+
+![Mobile View](https://i.imgur.com/47Y7AfD.jpg)
