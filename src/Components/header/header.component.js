@@ -19,9 +19,6 @@ const Header = ({ currentUser, toggleDropdown }) => (
       <OptionLink className="option" to="/shop">
         SHOP
       </OptionLink>
-      <OptionLink className="option" to="/shop">
-        CONTACT
-      </OptionLink>
       {
         currentUser ?
           <OptionDiv onClick={() => auth.signOut()}> SIGN OUT </OptionDiv>
