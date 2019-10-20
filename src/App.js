@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import './App.css';
 import HomePage from './Pages/Homepage/homepage.component';
 import ShopPage from './Pages/Shop/shop.component';
 import SignInUp from './Pages/SignInUp/SignInUp.component';
@@ -11,6 +10,7 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selectors';
+import { GlobalStyle } from './global.styles';
 
 const App = ({ setCurrentUser, currentUser }) => {
 
@@ -39,6 +39,7 @@ const App = ({ setCurrentUser, currentUser }) => {
 
     return (
       <div>
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
