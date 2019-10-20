@@ -24,4 +24,4 @@ Stripe Payments
 
 Progressive Web App
 
-![Mobile View](https://i.imgur.com/47Y7AfD.jpg)
+<img src="https://i.imgur.com/47Y7AfD.jpg" alt="progressive web app" height="400" width="200"/>
